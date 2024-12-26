@@ -31,7 +31,7 @@ extension MovieListVM {
         do {
             let movieResponse = try await repository.getMovie(page: "\(page)")
             response = movieResponse
-            movies.append(contentsOf: movieResponse.results) 
+            movies += movieResponse.results
         } catch {
             print(error)
         }
@@ -46,5 +46,9 @@ extension MovieListVM {
                 await loadMovies()
             }
         }
+    }
+    
+    func searchMovieByID(id: Int) -> Movie? {
+        return nil
     }
 }
