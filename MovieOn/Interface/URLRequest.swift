@@ -13,7 +13,7 @@ extension URLRequest {
         if let token {
             urlRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         }
-        urlRequest.setValue("accept", forHTTPHeaderField: "application/json")            
+        urlRequest.setValue("application/json", forHTTPHeaderField: "accept")
         return urlRequest
     }
 }

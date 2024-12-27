@@ -20,9 +20,10 @@ struct MovieResponse: Codable {
 }
 
 struct Movie: Codable, Identifiable {
+    var id = UUID()
     let adult: Bool
     let backdropPath: String?
-    let id: Int
+    let movieID: Int
     let originalLanguage: String
     let originalTitle, overview: String
     let popularity: Double
@@ -33,7 +34,7 @@ struct Movie: Codable, Identifiable {
     enum CodingKeys: String, CodingKey {
         case adult
         case backdropPath = "backdrop_path"
-        case id
+        case movieID
         case originalLanguage = "original_language"
         case originalTitle = "original_title"
         case overview, popularity
@@ -41,5 +42,9 @@ struct Movie: Codable, Identifiable {
         case releaseDate = "release_date"
         case title, video
         case voteAverage = "vote_average"
+    }
+    
+    var rate: String {
+        voteAverage.formatted(.number.precision(.fractionLength(2)))
     }
 }

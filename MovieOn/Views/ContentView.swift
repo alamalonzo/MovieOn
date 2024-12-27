@@ -10,11 +10,18 @@ import SwiftUI
 struct ContentView: View {
     @State var vm = MovieListVM()
     var body: some View {
-        List(vm.movies) { movie in
-            Text(movie.title)
-                .onAppear {
-                    vm.loadNextPage(id: movie.id)
+        NavigationStack {
+            List(vm.movies) { movie in
+                HStack {
+                    Text("Title: \(movie.title)")
+                    Spacer()
+                    Text("Rate: \(movie.rate)")
                 }
+                    .onAppear {
+                        vm.loadNextPage(id: movie.id)
+                    }
+            }
+            .navigationTitle("Now Playing")
         }
         .listStyle(.plain)
         .padding()

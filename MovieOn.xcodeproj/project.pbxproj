@@ -14,6 +14,7 @@
 		42FE9ED62D19DE8D00B842DD /* previewData.json in Resources */ = {isa = PBXBuildFile; fileRef = 42FE9ED52D19DE8D00B842DD /* previewData.json */; };
 		42FE9ED82D19DED100B842DD /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE9ED72D19DED100B842DD /* PreviewData.swift */; };
 		42FE9EDA2D19E76E00B842DD /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE9ED92D19E76E00B842DD /* NetworkTest.swift */; };
+		FCA04BB22D1F18900013A437 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FCA04BB12D1F18900013A437 /* Localizable.xcstrings */; };
 		FCF56E1D2D11E92100255E87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF56E1A2D11E92100255E87 /* ContentView.swift */; };
 		FCF56E1E2D11E92100255E87 /* MovieOnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF56E1B2D11E92100255E87 /* MovieOnApp.swift */; };
 		FCF56E1F2D11E92100255E87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCF56E172D11E92100255E87 /* Preview Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		42FE9ED52D19DE8D00B842DD /* previewData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = previewData.json; sourceTree = "<group>"; };
 		42FE9ED72D19DED100B842DD /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		42FE9ED92D19E76E00B842DD /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
+		FCA04BB12D1F18900013A437 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		FCF56DEA2D11E91200255E87 /* MovieOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF56DFA2D11E91400255E87 /* MovieOnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieOnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF56E042D11E91400255E87 /* MovieOnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieOnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				FCF56E192D11E92100255E87 /* Assets.xcassets */,
+				FCA04BB12D1F18900013A437 /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = FCF56DE12D11E91200255E87;
 			minimizedProjectReferenceProxies = 1;
@@ -337,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCF56E1F2D11E92100255E87 /* Preview Assets.xcassets in Resources */,
+				FCA04BB22D1F18900013A437 /* Localizable.xcstrings in Resources */,
 				42FE9ED62D19DE8D00B842DD /* previewData.json in Resources */,
 				FCF56E202D11E92100255E87 /* Assets.xcassets in Resources */,
 				FCF56E3C2D11F5CD00255E87 /* APIConfig.plist in Resources */,
@@ -473,6 +478,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 6.0;
@@ -531,6 +537,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;

@@ -56,7 +56,7 @@ struct MovieDTO: Codable {
         Movie(
             adult: adult,
             backdropPath: backdropPath,
-            id: id,
+            movieID: id,
             originalLanguage: originalLanguage,
             originalTitle: originalTitle,
             overview: overview,

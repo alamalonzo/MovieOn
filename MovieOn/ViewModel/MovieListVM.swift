@@ -20,7 +20,7 @@ final class MovieListVM {
         self.repository = repository
     }
     
-    private func isLast(id: Int) -> Bool {
+    private func isLast(id: UUID) -> Bool {
         movies.last?.id == id
     }
 }
@@ -37,7 +37,7 @@ extension MovieListVM {
         }
     }
     
-    func loadNextPage(id: Int) {
+    func loadNextPage(id: UUID) {
         guard let response = response,
               page <= response.totalPages else { return }
         if isLast(id: id) {

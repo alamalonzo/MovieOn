@@ -25,7 +25,6 @@ extension URLQueryItem {
     
     static func queryLang() -> URLQueryItem {
         let lang = Locale.preferredLanguages.first ?? "es-ES"
-        print(lang)
         return URLQueryItem(name: "language", value: lang)
     }
 }
