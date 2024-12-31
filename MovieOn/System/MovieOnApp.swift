@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct MovieOnApp: App {
+    @State var navManager = NavigationManager()
+    @AppStorage("isFirstLaunch") var isFirstLaunch = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()//
+            if isFirstLaunch {
+                OnboardingView()
+            } else {
+                ContentView()
+                    .environment(navManager)
+            }
         }
     }
 }

@@ -1,6 +1,18 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "7" : {
+
+    },
+    "Back to root" : {
+
+    },
+    "Continue to the app" : {
+
+    },
+    "Next" : {
+
+    },
     "Now Playing" : {
       "localizations" : {
         "es" : {
@@ -21,6 +33,9 @@
         }
       }
     },
+    "Skip" : {
+
+    },
     "Title: %@" : {
       "localizations" : {
         "es" : {
@@ -30,6 +45,9 @@
           }
         }
       }
+    },
+    "Vista 1" : {
+
     }
   },
   "version" : "1.0"

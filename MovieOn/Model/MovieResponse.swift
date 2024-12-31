@@ -19,7 +19,7 @@ struct MovieResponse: Codable {
     }
 }
 
-struct Movie: Codable, Identifiable {
+struct Movie: Codable, Identifiable, Hashable {
     var id = UUID()
     let adult: Bool
     let backdropPath: String?

@@ -32,3 +32,18 @@ extension MovieListVM {
 //        return try self.decode(type, from: from)
 //    }
 //}
+
+extension Movie {
+    static let moviePreview = Movie(id: UUID(), adult: false,
+                                    backdropPath: "/cjEcqdRdPQJhYre3HUAc5538Gk8.jpg",
+                                    movieID: 845781,
+                                    originalLanguage: "en",
+                                    originalTitle: "Red One",
+                                    overview: "After Santa Claus (codename: Red One) is kidnapped, the North Pole's Head of Security must team up with the world's most infamous tracker in a globe-trotting, action-packed mission to save Christmas.",
+                                    popularity: 6943.482,
+                                    posterPath: "/cdqLnri3NEGcmfnqwk2TSIYtddg.jpg",
+                                    releaseDate: "2024-10-31",
+                                    title: "Maria on fire",
+                                    video: false,
+                                    voteAverage: 7.0)
+}
